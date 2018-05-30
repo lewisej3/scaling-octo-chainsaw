@@ -1,6 +1,6 @@
 # scaling-octo-chainsaw
 BBC news headline scraper.
-Currently the code scrapes the headlines with summaries and links and inputs the data into a sqlite3 database. 
+The code scrapes the headlines with summaries and links and inputs the data into a sqlite3 database. 
 The headlines are separated according to importance with the classifications primary, secondary, tertiary and sport, used by the BBC.
 In order to automate the process to run daily use crontab with the details given below.
 
