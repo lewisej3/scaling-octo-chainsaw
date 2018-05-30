@@ -1,7 +1,9 @@
 # scaling-octo-chainsaw
 BBC news headline scraper.
-Currently the code scrapes the headlines with summaries and links and just outputs them with print. Using crontab the code is able to write to a separate log file which stores all of the headlines that have been scraped.
+Currently the code scrapes the headlines with summaries and links and inputs the data into a sqlite3 database. 
 The headlines are separated according to importance with the classifications primary, secondary, tertiary and sport, used by the BBC.
+In order to automate the process to run daily use crontab with the details given below.
+
 
 In order to run automatically use crontab.
 For OSX.
@@ -12,7 +14,7 @@ Using the nano text editor in terminal
 opens nano,
 crontab takes five numbers (or *) and then the command
 
-"0 9 * * * cd ~/Dropbox/Code/Python && ./bbc.py >> script_output.log 2>&1"
+"0 9 * * * cd FILELOCATION && ./bbc.py"
 
 then to save the file press
 
